@@ -21,21 +21,26 @@ Our model aims to **predict loan defaults** based on applicant data, ensuring **
 ## Steps to Build the Model
 **📌 Step 1 – Data Collection**
 We use credit.csv, which contains loan applicant data and loan default outcomes.
+
 **📌 Step 2 – Data Exploration & Preprocessing**
 Convert categorical variables into factors.
 Handle missing values if necessary.
 Randomly split data into 90% training and 10% testing sets.
+
 **📌 Step 3 – Training the Decision Tree Model**
 Train a C5.0 decision tree using the C50 package.
 credit_model <- C5.0(credit_train[-last_col], credit_train$default)
 summary(credit_model)
+
 **📌 Step 4 – Evaluating Model Performance**
 Use the confusion matrix to analyze misclassifications.
 Predict on test data:
 credit_pred <- predict(credit_model, credit_test)
+
 **📌 Step 5 – Improving Model Performance**
 Tune model hyperparameters for better accuracy.
 Adjust decision tree cost-sensitive parameters to reduce financial losses.
+
 **📊 Model Insights**
 The checking account balance plays a key role in predicting loan defaults.
 The model struggles to correctly classify high-risk applicants.
