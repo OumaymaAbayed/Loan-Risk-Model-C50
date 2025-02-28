@@ -52,9 +52,11 @@ The results obtained were somewhat worse than its performance on the training da
 The classifier made 30 mistakes on 900 training examples for an error rate of 3%. This is quite an improvement over the 14.1% training error rate we noted before adding boosting.
 Similarly, the error rate in the test data decreased from 25% to 21% in the boosted model.
 2- Assign a penalty to each error to reduce False Negatives:
-This version unfortunately makes more mistakes overall: 35%. However, the types of mistakes vary dramatically.  This trade resulting in a reduction of false negatives at the expense of increasing false positives may be acceptable if our cost estimates were accurate.
+This version, unfortunately makes more mistakes overall: 35%. However, the types of mistakes vary dramatically.  This trade resulting in a reduction of false negatives at the expense of increasing false positive,s may be acceptable if our cost estimates were accurate.
 
 **📊 Model Insights**
+
 The model struggles to correctly classify high-risk applicants.
-Fine-tuning the model can help reduce misclassification costs.
+
+Fine-tuning the model helped reduce misclassification costs.
 
