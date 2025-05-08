@@ -1,4 +1,4 @@
-<# Loan-Risk-Model-C50
+# Loan-Risk-Model-C50
 
 ## 📌 Project Overview
 The 2007-2008 financial crisis highlighted the importance of **accurate risk assessment** in banking.  
